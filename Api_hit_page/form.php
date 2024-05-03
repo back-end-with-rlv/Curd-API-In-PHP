@@ -2,17 +2,17 @@
 $msg="";
 $name="";
 $email="";
-if(isset($_POST['submit'])){
+if(isset($_POST['submit'])){  
     $arr['name']=$_POST['name'];
     $arr['email']=$_POST['email'];
     $id="";
     if(isset($_GET['id']) && $_GET['id']>0){
         $id=$_GET['id'];
     }
-    $url="http://localhost/Api/CrudAPI/Api/insert_update.php?token=sadsadasdadasdasdasd&id=".$id;
+    $url="http://localhost/Api/insert_update.php?token=sadsadasdadasdasdasd&id=".$id;
     $ch=curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
-    curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
+    curl_setopt($ch,CURLOPT_RETURNTRANSFER,true); 
     curl_setopt($ch,CURLOPT_POSTFIELDS,$arr);
     $result=curl_exec($ch);
     curl_close($ch);
@@ -21,7 +21,7 @@ if(isset($_POST['submit'])){
 }
 
 if(isset($_GET['id']) && $_GET['id']>0){
-    $url="http://localhost/Api/CrudAPI/Api/index.php?token=sadsadasdadasdasdasd&id=".$_GET['id'];
+    $url="http://localhost/Api/index.php?token=sadsadasdadasdasdasd&id=".$_GET['id'];
     $ch=curl_init();
     curl_setopt($ch, CURLOPT_URL,$url);
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
