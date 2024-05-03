@@ -59,8 +59,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`) VALUES
-(7, 'ratanl Lal verma  ews', 'ratanlalver@gmail.com'),
-(9, 'Sunil kumar vermar', 'sunilverma@gmail.com');
+(7, 'ratanl Lal   ', 'ratanlalver@gmail.com'),
+(9, 'Sunil kumar ', 'sunilverma@gmail.com');
 
 --
 -- Indexes for dumped tables
