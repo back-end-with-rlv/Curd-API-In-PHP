@@ -1,5 +1,5 @@
 <?php
-$url="http://localhost/Api/CrudAPI/Api/index.php?token=sadsadasdadasdasdasd";
+$url="http://localhost/Api/index.php?token=sadsadasdadasdasdasd";
 $ch=curl_init();
 curl_setopt($ch, CURLOPT_URL,$url);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
