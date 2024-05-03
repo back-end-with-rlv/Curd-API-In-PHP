@@ -69,7 +69,7 @@ $(document).ready(function(){
                                 <td><?php echo $list['email']?></td>
                                 <td>
                                 <a href="form.php?id=<?php echo $list['id']?>" class="edit" title="Edit"><i class="material-icons colorize">&#xe3b8;</i></a>
-                               <a href="hit_delete.php?id=<?php echo $list['id']?>" class="delete" title="Delete" style="color: red;" onclick="return confirm('Are you sure you want to delete?');"><i class="material-icons">&#xE5C9;</i></a>
+                               <a href="delete.php?id=<?php echo $list['id']?>" class="delete" title="Delete" style="color: red;" onclick="return confirm('Are you sure you want to delete?');"><i class="material-icons">&#xE5C9;</i></a>
 
                                 </td>
                             </tr>
