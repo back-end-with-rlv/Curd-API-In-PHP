@@ -12,3 +12,11 @@ Response Codes
 1: No token provided.
 2: Invalid token provided.
 3: Token is deactivated.
+
+#User Data Retrieval API
+This PHP script serves as an API endpoint to retrieve user data from a database table (users). It provides functionality to fetch all users or a specific user by their ID. The script ensures authentication using a token-based system implemented in the token.php file.
+
+Usage
+Setup Database: Ensure you have a MySQL database set up with a table named users containing user data.
+Token Authentication: The script includes a token file (token.php) for authentication. Ensure this file is correctly configured to validate user tokens.
+Endpoint: Access the API endpoint (index.php) to retrieve user data. You can optionally provide an id parameter in the URL to fetch data for a specific user. Example: http://example.com/api/index.php?id=1
