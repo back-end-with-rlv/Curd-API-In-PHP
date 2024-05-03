@@ -1,6 +1,6 @@
 <?php
 if(isset($_GET['id']) && $_GET['id']>0){
-    $url="http://localhost/Api/CrudAPI/Api/delete.php?token=sadsadasdadasdasdasd";
+    $url="http://localhost/Api/delete.php?token=sadsadasdadasdasdasd";
     $ch=curl_init();
     $arr['id']=$_GET['id'];
     curl_setopt($ch, CURLOPT_URL,$url);
